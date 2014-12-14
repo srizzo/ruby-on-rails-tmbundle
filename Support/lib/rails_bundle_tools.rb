@@ -5,7 +5,10 @@
 # Description:
 #   Collection of Rails / TextMate classes for Ruby.
 
+support_lib = ENV['TM_SUPPORT_PATH'] + '/lib'
 bundle_lib = ENV['TM_BUNDLE_SUPPORT'] + '/lib'
+
+$LOAD_PATH.unshift(support_lib) if ENV['TM_SUPPORT_PATH'] and !$LOAD_PATH.include?(support_lib)
 $LOAD_PATH.unshift(bundle_lib) if ENV['TM_BUNDLE_SUPPORT'] and !$LOAD_PATH.include?(bundle_lib)
 
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
