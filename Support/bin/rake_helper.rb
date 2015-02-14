@@ -9,7 +9,7 @@
 #   Runs 'rake' and executes a particular task
 
 require 'optparse'
-require 'rails_bundle_tools'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 require "#{ENV["TM_SUPPORT_PATH"]}/lib/escape"
 require "#{ENV["TM_SUPPORT_PATH"]}/lib/web_preview"
 

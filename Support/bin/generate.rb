@@ -7,7 +7,7 @@
 # Description:
 #   Asks what to generate and what name to use, then runs script/generate.
 
-require 'rails_bundle_tools'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 require 'fileutils'
 
 require File.dirname(__FILE__) + "/../lib/rails/generate"

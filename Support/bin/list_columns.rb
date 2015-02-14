@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby -W0
 
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 require "yaml"
-require "rails_bundle_tools"
 require "progress"
 require "current_word"
 

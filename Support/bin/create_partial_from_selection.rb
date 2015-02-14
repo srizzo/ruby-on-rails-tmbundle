@@ -9,7 +9,7 @@
 #   Creates a partial from the selected text (asks for the partial name)
 #   and replaces the text with a "render :partial => [partial_name]" erb fragment.
 
-require 'rails_bundle_tools'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 
 current_file = RailsPath.new
 

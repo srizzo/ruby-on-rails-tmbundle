@@ -8,7 +8,7 @@
 #   Generates a migration file from the selection or current word.  This is much faster than calling upon
 #   Rails' built-in generate migration code.
 
-require 'rails_bundle_tools'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 require 'fileutils'
 
 selection = TextMate::UI.request_string(

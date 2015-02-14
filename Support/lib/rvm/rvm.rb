@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "rails_bundle_tools"
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 require File.join(TextMate.support_path, "lib", "escape")
 require File.join(TextMate.support_path, "lib", "osx", "plist")
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'rails_bundle_tools'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/rails_bundle_tools'
 require 'fileutils'
 require 'rubygems'
 require "#{ENV['TM_SUPPORT_PATH']}/lib/tm/htmloutput"
